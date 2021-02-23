@@ -16,6 +16,6 @@
 
 .prettierignore
 
-design
+design/
 
-index.html
+.index.html
