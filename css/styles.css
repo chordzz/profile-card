@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: url(../images/bg-pattern-top.svg) no-repeat,
+    url(../images/bg-pattern-bottom.svg) no-repeat;
+  background-size: 1000px;
+  background-position-x: -400px, 600px;
+  background-position-y: -500px, 400px;
+  background-color: hsl(185, 75%, 39%);
+  font-family: "Kumbh Sans", sans-serif;
+  /* background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+  background-position: left top, right bottom;
+  background-repeat: no-repeat, no-repeat; */
+}
+
+.content {
+  width: 370px;
+  height: 400px;
+  margin: 10% auto;
+  background: white;
+  border-radius: 15px;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+h1 span {
+  margin-left: 10px;
+}
+
+.bottom p,
+.middle h1 {
+  font-weight: 700;
+  font-size: 20px;
+  color: hsl(0, 0%, 13%);
+}
+
+.middle span,
+.middle p,
+.bottom p span {
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+}
+
+.bottom p span {
+  font-size: 12px;
+  margin-top: 7px;
+  letter-spacing: 2px;
+}
+
+/* Top Section of the card */
+
+.top {
+  background: url(../images/bg-pattern-card.svg);
+  height: 130px;
+  border-radius: inherit;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  position: relative;
+}
+
+.top img {
+  width: 100px;
+  height: 100px;
+  border-radius: 55px;
+  position: absolute;
+  left: 135px;
+  top: 80px;
+  border: 5px solid white;
+}
+
+/* Middle section of the Profile card */
+
+.middle {
+  /* height: 100px; */
+  text-align: center;
+  /* margin-bottom: 40px; */
+}
+
+.middle h1 {
+  margin-top: 50px;
+  padding: 30px 0 15px;
+}
+
+.middle p {
+  margin-bottom: 25px;
+}
+
+/* Bottom section of the Profile Card */
+
+.bottom {
+  height: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.bottom p {
+  text-align: center;
+}
+
+.bottom span {
+  display: block;
+}
+
+@media (max-width: 375px) {
+  body {
+    font-size: 14px;
+  }
+  .content {
+    margin-top: 150px;
+    width: 300px;
+    height: 330px;
+  }
+
+  .top img {
+    width: 80px;
+    height: 80px;
+    border-radius: 44px;
+    top: 90px;
+    left: 110px;
+  }
+
+  .middle h1 {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 16px;
+  }
+
+  .bottom {
+    margin-top: 10px;
+  }
+
+  .bottom p {
+    font-size: 16px;
+  }
+
+  .bottom p span {
+    margin-top: 2px;
+    font-size: 12px;
+  }
+}
